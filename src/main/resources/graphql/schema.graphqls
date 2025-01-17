@@ -1,0 +1,24 @@
+type Query {
+    getCryptoCoins(vsCurrency: String!): [CryptoCoin]
+}
+
+type CryptoCoin {
+    name: String
+    symbol: String
+    lastUpdated: String
+    currentPrice: Float
+    image: String
+    marketCap: Float
+    totalVolume: Float
+    high24h: Float
+    low24h: Float
+    priceChange24h: Float
+    priceChangePercentage24h: Float
+    ath: Float
+    athChangePercentage: Float
+    athDate: String
+    atl: Float
+    atlChangePercentage: Float
+    atlDate: String
+    circulatingSupply: Float
+}
